@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PostViewController.h"
 
 @implementation AppDelegate
 
@@ -14,6 +15,10 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+  
+    PostViewController *pVC = [[PostViewController alloc] init];
+    self.window.rootViewController = pVC;
+  
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

@@ -19,6 +19,8 @@
 		8678CD021940553900347D68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8678CCEA1940553900347D68 /* UIKit.framework */; };
 		8678CD0A1940553900347D68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8678CD081940553900347D68 /* InfoPlist.strings */; };
 		8678CD0C1940553A00347D68 /* FacebookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8678CD0B1940553A00347D68 /* FacebookTests.m */; };
+		86A5BFC519405A4600DDF364 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A5BFC319405A4600DDF364 /* PostViewController.m */; };
+		86A5BFC619405A4600DDF364 /* PostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86A5BFC419405A4600DDF364 /* PostViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		8678CD071940553900347D68 /* FacebookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FacebookTests-Info.plist"; sourceTree = "<group>"; };
 		8678CD091940553900347D68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8678CD0B1940553A00347D68 /* FacebookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacebookTests.m; sourceTree = "<group>"; };
+		86A5BFC219405A4600DDF364 /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PostViewController.h; path = ../PostViewController.h; sourceTree = "<group>"; };
+		86A5BFC319405A4600DDF364 /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PostViewController.m; path = ../PostViewController.m; sourceTree = "<group>"; };
+		86A5BFC419405A4600DDF364 /* PostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PostViewController.xib; path = ../PostViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,9 @@
 		8678CCEC1940553900347D68 /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
+				86A5BFC219405A4600DDF364 /* PostViewController.h */,
+				86A5BFC319405A4600DDF364 /* PostViewController.m */,
+				86A5BFC419405A4600DDF364 /* PostViewController.xib */,
 				8678CCF51940553900347D68 /* AppDelegate.h */,
 				8678CCF61940553900347D68 /* AppDelegate.m */,
 				8678CCF81940553900347D68 /* Images.xcassets */,
@@ -221,6 +229,7 @@
 			files = (
 				8678CCF11940553900347D68 /* InfoPlist.strings in Resources */,
 				8678CCF91940553900347D68 /* Images.xcassets in Resources */,
+				86A5BFC619405A4600DDF364 /* PostViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +250,7 @@
 			files = (
 				8678CCF71940553900347D68 /* AppDelegate.m in Sources */,
 				8678CCF31940553900347D68 /* main.m in Sources */,
+				86A5BFC519405A4600DDF364 /* PostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +447,7 @@
 				8678CD111940553A00347D68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8678CD121940553A00347D68 /* Build configuration list for PBXNativeTarget "FacebookTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +456,7 @@
 				8678CD141940553A00347D68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
