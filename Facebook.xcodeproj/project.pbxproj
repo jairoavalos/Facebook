@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		863BF65E19412AA200F6A6B0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863BF65D19412AA200F6A6B0 /* Media.xcassets */; };
 		8678CCE71940553900347D68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8678CCE61940553900347D68 /* Foundation.framework */; };
 		8678CCE91940553900347D68 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8678CCE81940553900347D68 /* CoreGraphics.framework */; };
 		8678CCEB1940553900347D68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8678CCEA1940553900347D68 /* UIKit.framework */; };
 		8678CCF11940553900347D68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8678CCEF1940553900347D68 /* InfoPlist.strings */; };
 		8678CCF31940553900347D68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8678CCF21940553900347D68 /* main.m */; };
 		8678CCF71940553900347D68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8678CCF61940553900347D68 /* AppDelegate.m */; };
-		8678CCF91940553900347D68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8678CCF81940553900347D68 /* Images.xcassets */; };
 		8678CD001940553900347D68 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8678CCFF1940553900347D68 /* XCTest.framework */; };
 		8678CD011940553900347D68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8678CCE61940553900347D68 /* Foundation.framework */; };
 		8678CD021940553900347D68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8678CCEA1940553900347D68 /* UIKit.framework */; };
@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		863BF65D19412AA200F6A6B0 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../../../../.Trash/Media.xcassets; sourceTree = "<group>"; };
 		8678CCE31940553900347D68 /* Facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8678CCE61940553900347D68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8678CCE81940553900347D68 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -44,7 +45,6 @@
 		8678CCF41940553900347D68 /* Facebook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Facebook-Prefix.pch"; sourceTree = "<group>"; };
 		8678CCF51940553900347D68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8678CCF61940553900347D68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8678CCF81940553900347D68 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8678CCFE1940553900347D68 /* FacebookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8678CCFF1940553900347D68 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8678CD071940553900347D68 /* FacebookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FacebookTests-Info.plist"; sourceTree = "<group>"; };
@@ -112,12 +112,12 @@
 		8678CCEC1940553900347D68 /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
+				863BF65D19412AA200F6A6B0 /* Media.xcassets */,
 				86A5BFC219405A4600DDF364 /* PostViewController.h */,
 				86A5BFC319405A4600DDF364 /* PostViewController.m */,
 				86A5BFC419405A4600DDF364 /* PostViewController.xib */,
 				8678CCF51940553900347D68 /* AppDelegate.h */,
 				8678CCF61940553900347D68 /* AppDelegate.m */,
-				8678CCF81940553900347D68 /* Images.xcassets */,
 				8678CCED1940553900347D68 /* Supporting Files */,
 			);
 			path = Facebook;
@@ -228,7 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8678CCF11940553900347D68 /* InfoPlist.strings in Resources */,
-				8678CCF91940553900347D68 /* Images.xcassets in Resources */,
+				863BF65E19412AA200F6A6B0 /* Media.xcassets in Resources */,
 				86A5BFC619405A4600DDF364 /* PostViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

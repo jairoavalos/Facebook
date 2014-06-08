@@ -16,8 +16,17 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
   
+    // Setting up post view controller
     PostViewController *pVC = [[PostViewController alloc] init];
-    self.window.rootViewController = pVC;
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:pVC];
+  
+    navigationController.navigationBar.barTintColor = [UIColor colorWithRed:59.0/255.0 green:89.0/255.0 blue:152.0/255.0 alpha:1];
+    navigationController.navigationBar.tintColor = [UIColor whiteColor];
+  [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+  navigationController.navigationBar.translucent = NO;
+  
+  self.window.rootViewController = navigationController;
+
   
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
