@@ -32,19 +32,24 @@
   
   [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
   
-  // Configure the title
+  // Configure the nav bar
   self.navigationItem.title = @"Post";
   
+  UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back-button"] style:UIBarButtonItemStylePlain target:nil action:nil];
+  self.navigationItem.leftBarButtonItem = backButton;
+  
+  UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"share-icon"] style:UIBarButtonItemStylePlain target:nil action:nil];
+  self.navigationItem.rightBarButtonItem = shareButton;
+  
+  // Set up container view style
   self.postContainer.layer.cornerRadius = 2;
   self.postContainer.layer.shadowColor = [UIColor blackColor].CGColor;
   self.postContainer.layer.shadowOffset = CGSizeMake(0, 1);
   self.postContainer.layer.shadowOpacity = .15;
   self.postContainer.layer.shadowRadius = 1;
   
+  // Text field style
   self.commentField.textColor = [UIColor colorWithRed:150.0/255.0 green:150.0/255.0 blue:150.0/255.0 alpha:1];
-  
-  UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
-  self.navigationItem.backBarButtonItem = backButton;
   
 }
 

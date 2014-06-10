@@ -20,7 +20,7 @@
                     <rect key="frame" x="10" y="15" width="300" height="446"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="her-profile-pic.png" translatesAutoresizingMaskIntoConstraints="NO" id="8iK-JJ-KdA">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="her-profile-pic" translatesAutoresizingMaskIntoConstraints="NO" id="8iK-JJ-KdA">
                             <rect key="frame" x="10" y="10" width="36" height="36"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
@@ -38,7 +38,7 @@
                             <color key="textColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="post-settings-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="tY6-ba-2H3">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="post-settings-icon" translatesAutoresizingMaskIntoConstraints="NO" id="tY6-ba-2H3">
                             <rect key="frame" x="188" y="31" width="10" height="10"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </imageView>
@@ -79,33 +79,33 @@
                             </attributedString>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="her-post-photo.png" translatesAutoresizingMaskIntoConstraints="NO" id="1pJ-xN-Uvg">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="her-post-photo" translatesAutoresizingMaskIntoConstraints="NO" id="1pJ-xN-Uvg">
                             <rect key="frame" x="-5" y="136" width="310" height="178"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WI6-Ij-yqV">
                             <rect key="frame" x="0.0" y="327" width="88" height="42"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" image="like-button.png">
+                            <state key="normal" image="like-button">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
-                            <state key="highlighted" image="like-button-highlighted.png"/>
+                            <state key="highlighted" image="like-button-highlighted"/>
                         </button>
                         <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtf-aj-mwR">
                             <rect key="frame" x="88" y="327" width="118" height="42"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" image="comment-button.png">
+                            <state key="normal" image="comment-button">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
-                            <state key="highlighted" image="comment-button-highlighted.png"/>
+                            <state key="highlighted" image="comment-button-highlighted"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldu-6c-PRv">
                             <rect key="frame" x="205" y="327" width="95" height="42"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" image="share-button.png">
+                            <state key="normal" image="share-button">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
-                            <state key="highlighted" image="share-button-highlighted.png"/>
+                            <state key="highlighted" image="share-button-highlighted"/>
                         </button>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hO4-Ks-r8l">
                             <rect key="frame" x="10" y="378" width="168" height="21"/>
@@ -132,7 +132,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" background="comment-bg" translatesAutoresizingMaskIntoConstraints="NO" id="VX3-Bj-YJA">
-                    <rect key="frame" x="0.0" y="424" width="320" height="45"/>
+                    <rect key="frame" x="0.0" y="412" width="320" height="45"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <attributedString key="attributedText">
                         <fragment content="Write a comment...">
@@ -144,6 +144,10 @@
                     </attributedString>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tab-bar" translatesAutoresizingMaskIntoConstraints="NO" id="lNt-Jg-9eO">
+                    <rect key="frame" x="0.0" y="457" width="320" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.82745098039215681" green="0.83921568627450982" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -152,14 +156,15 @@
     </objects>
     <resources>
         <image name="comment-bg" width="320" height="45"/>
-        <image name="comment-button-highlighted.png" width="118" height="42"/>
-        <image name="comment-button.png" width="118" height="42"/>
-        <image name="her-post-photo.png" width="1024" height="576"/>
-        <image name="her-profile-pic.png" width="36" height="36"/>
-        <image name="like-button-highlighted.png" width="88" height="42"/>
-        <image name="like-button.png" width="88" height="42"/>
-        <image name="post-settings-icon.png" width="10" height="10"/>
-        <image name="share-button-highlighted.png" width="95" height="42"/>
-        <image name="share-button.png" width="95" height="42"/>
+        <image name="comment-button" width="118" height="42"/>
+        <image name="comment-button-highlighted" width="118" height="42"/>
+        <image name="her-post-photo" width="1024" height="576"/>
+        <image name="her-profile-pic" width="36" height="36"/>
+        <image name="like-button" width="88" height="42"/>
+        <image name="like-button-highlighted" width="88" height="42"/>
+        <image name="post-settings-icon" width="10" height="10"/>
+        <image name="share-button" width="95" height="42"/>
+        <image name="share-button-highlighted" width="95" height="42"/>
+        <image name="tab-bar" width="320" height="44"/>
     </resources>
 </document>
