@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *commentField;
 @property (weak, nonatomic) IBOutlet UIImageView *tabBar;
 @property (weak, nonatomic) IBOutlet UIButton *likeButton;
+@property (weak, nonatomic) IBOutlet UIImageView *commentBackground;
 
 - (void)willShowKeyboard:(NSNotification *)notification;
 - (void)willHideKeyboard:(NSNotification *)notification;
@@ -53,6 +54,12 @@
     UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"share-icon"] style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.rightBarButtonItem = shareButton;
   
+    
+    self.commentField.textColor = [UIColor blackColor];
+    UIView *spacerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    [self.commentField setLeftViewMode:UITextFieldViewModeAlways];
+    [self.commentField setLeftView:spacerView];
+    
     // Set up container view style
     self.postContainer.layer.cornerRadius = 2;
     self.postContainer.layer.shadowColor = [UIColor blackColor].CGColor;
@@ -121,11 +128,18 @@
                                   delay:0.0
                                 options:(animationCurve << 16)
                              animations:^{
-                                 self.commentField.frame = CGRectMake(0, self.view.frame.size.height - kbSize.height - self.commentField.frame.size.height, self.commentField.frame.size.width, self.commentField.frame.size.height);
+                                 self.commentField.frame = CGRectMake(16, self.view.frame.size.height - kbSize.height - self.commentField.frame.size.height - 6, self.commentField.frame.size.width, self.commentField.frame.size.height);
                              }
                              completion:nil];
+    [UIView animateWithDuration:animationDuration
+                          delay:0.0
+                        options:(animationCurve << 16)
+                     animations:^{
+                         self.commentBackground.frame = CGRectMake(0, self.view.frame.size.height - kbSize.height - self.commentBackground.frame.size.height, self.commentBackground.frame.size.width, self.commentBackground.frame.size.height);
+                     }
+                     completion:nil];
 }
-        
+
 - (void)willHideKeyboard:(NSNotification *)notification {
     NSDictionary *userInfo = [notification userInfo];
             
@@ -140,9 +154,17 @@
                                   delay:0.0
                                 options:(animationCurve << 16)
                              animations:^{
-                                 self.commentField.frame = CGRectMake(0, self.view.frame.size.height - self.commentField.frame.size.height - self.tabBar.frame.size.height, self.commentField.frame.size.width, self.commentField.frame.size.height);
+                                 self.commentField.frame = CGRectMake(16, self.view.frame.size.height - self.commentField.frame.size.height - self.tabBar.frame.size.height - 6, self.commentField.frame.size.width, self.commentField.frame.size.height);
                              }
                              completion:nil];
+    
+    [UIView animateWithDuration:animationDuration
+                          delay:0.0
+                        options:(animationCurve << 16)
+                     animations:^{
+                         self.commentBackground.frame = CGRectMake(0, self.view.frame.size.height - self.commentBackground.frame.size.height - self.tabBar.frame.size.height, self.commentBackground.frame.size.width, self.commentBackground.frame.size.height);
+                     }
+                     completion:nil];
 }
 
 - (IBAction)dismissKeyboard:(id)sender {

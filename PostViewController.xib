@@ -6,7 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostViewController">
             <connections>
-                <outlet property="commentField" destination="VX3-Bj-YJA" id="IQE-cR-ycd"/>
+                <outlet property="commentBackground" destination="qVq-Le-50h" id="aam-Ke-Gno"/>
+                <outlet property="commentField" destination="9Wf-ml-sPS" id="xbQ-gp-Vx9"/>
                 <outlet property="likeButton" destination="WI6-Ij-yqV" id="csJ-TZ-rzT"/>
                 <outlet property="postContainer" destination="c9a-mA-QUE" id="JOW-Pr-cbx"/>
                 <outlet property="tabBar" destination="lNt-Jg-9eO" id="8QU-ff-szC"/>
@@ -114,23 +115,21 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" background="comment-bg" translatesAutoresizingMaskIntoConstraints="NO" id="VX3-Bj-YJA">
-                    <rect key="frame" x="0.0" y="412" width="320" height="45"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <attributedString key="attributedText">
-                        <fragment content="Write a comment...">
-                            <attributes>
-                                <font key="NSFont" metaFont="toolTip"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="24"/>
-                            </attributes>
-                        </fragment>
-                    </attributedString>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tab-bar" translatesAutoresizingMaskIntoConstraints="NO" id="lNt-Jg-9eO">
                     <rect key="frame" x="0.0" y="457" width="320" height="45"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="comment-bg" translatesAutoresizingMaskIntoConstraints="NO" id="qVq-Le-50h">
+                    <rect key="frame" x="0.0" y="412" width="320" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Write a comment..." minimumFontSize="17" background="comment-text-bg" translatesAutoresizingMaskIntoConstraints="NO" id="9Wf-ml-sPS">
+                    <rect key="frame" x="16" y="418" width="240" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="0.82745098039215681" green="0.83921568627450982" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
             <gestureRecognizers/>
@@ -150,6 +149,7 @@
         <image name="bar_bg_rpt" width="1" height="41"/>
         <image name="bar_bg_rpt_highlight" width="1" height="41"/>
         <image name="comment-bg" width="320" height="45"/>
+        <image name="comment-text-bg" width="240" height="32"/>
         <image name="comment_btn" width="17" height="40"/>
         <image name="her-post-photo" width="1024" height="576"/>
         <image name="her-profile-pic" width="36" height="36"/>
