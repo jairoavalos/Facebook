@@ -7,7 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostViewController">
             <connections>
                 <outlet property="commentField" destination="VX3-Bj-YJA" id="IQE-cR-ycd"/>
-                <outlet property="likeButton" destination="WI6-Ij-yqV" id="apu-gL-gRm"/>
+                <outlet property="likeButton" destination="WI6-Ij-yqV" id="csJ-TZ-rzT"/>
                 <outlet property="postContainer" destination="c9a-mA-QUE" id="JOW-Pr-cbx"/>
                 <outlet property="tabBar" destination="lNt-Jg-9eO" id="8QU-ff-szC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -64,6 +64,9 @@
                             <state key="highlighted" backgroundImage="bar_bg_rpt_highlight">
                                 <color key="titleColor" red="0.30588235294117649" green="0.3411764705882353" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="onLikeButtonPressed:" destination="-1" eventType="touchUpInside" id="xcb-M2-hfV"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtf-aj-mwR">
                             <rect key="frame" x="88" y="327" width="118" height="42"/>

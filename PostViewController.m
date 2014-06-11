@@ -12,10 +12,12 @@
 @property (strong, nonatomic) IBOutlet UIView *postContainer;
 @property (strong, nonatomic) IBOutlet UITextField *commentField;
 @property (weak, nonatomic) IBOutlet UIImageView *tabBar;
+@property (weak, nonatomic) IBOutlet UIButton *likeButton;
 
 - (void)willShowKeyboard:(NSNotification *)notification;
 - (void)willHideKeyboard:(NSNotification *)notification;
 - (IBAction)dismissKeyboard:(id)sender;
+- (IBAction)onLikeButtonPressed:(id)sender;
 
 @end
 
@@ -145,6 +147,14 @@
 
 - (IBAction)dismissKeyboard:(id)sender {
     [self.view endEditing:YES];
+}
+
+- (IBAction)onLikeButtonPressed:(id)sender {
+    if (self.likeButton.selected) {
+        [self.likeButton setSelected:NO];
+    } else {
+        [self.likeButton setSelected:YES];
+    }
 }
         
 
