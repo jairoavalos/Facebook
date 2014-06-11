@@ -1,464 +1,1078 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		86708AA41946DF3100D106FC /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86708AA31946DF3100D106FC /* Media.xcassets */; };
-		8678CCE71940553900347D68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8678CCE61940553900347D68 /* Foundation.framework */; };
-		8678CCE91940553900347D68 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8678CCE81940553900347D68 /* CoreGraphics.framework */; };
-		8678CCEB1940553900347D68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8678CCEA1940553900347D68 /* UIKit.framework */; };
-		8678CCF11940553900347D68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8678CCEF1940553900347D68 /* InfoPlist.strings */; };
-		8678CCF31940553900347D68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8678CCF21940553900347D68 /* main.m */; };
-		8678CCF71940553900347D68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8678CCF61940553900347D68 /* AppDelegate.m */; };
-		8678CD001940553900347D68 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8678CCFF1940553900347D68 /* XCTest.framework */; };
-		8678CD011940553900347D68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8678CCE61940553900347D68 /* Foundation.framework */; };
-		8678CD021940553900347D68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8678CCEA1940553900347D68 /* UIKit.framework */; };
-		8678CD0A1940553900347D68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8678CD081940553900347D68 /* InfoPlist.strings */; };
-		8678CD0C1940553A00347D68 /* FacebookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8678CD0B1940553A00347D68 /* FacebookTests.m */; };
-		86A5BFC519405A4600DDF364 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A5BFC319405A4600DDF364 /* PostViewController.m */; };
-		86A5BFC619405A4600DDF364 /* PostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86A5BFC419405A4600DDF364 /* PostViewController.xib */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		8678CD031940553900347D68 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8678CCDB1940553900347D68 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8678CCE21940553900347D68;
-			remoteInfo = Facebook;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		86708AA31946DF3100D106FC /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		8678CCE31940553900347D68 /* Facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8678CCE61940553900347D68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8678CCE81940553900347D68 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8678CCEA1940553900347D68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		8678CCEE1940553900347D68 /* Facebook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Facebook-Info.plist"; sourceTree = "<group>"; };
-		8678CCF01940553900347D68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8678CCF21940553900347D68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8678CCF41940553900347D68 /* Facebook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Facebook-Prefix.pch"; sourceTree = "<group>"; };
-		8678CCF51940553900347D68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8678CCF61940553900347D68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8678CCFE1940553900347D68 /* FacebookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8678CCFF1940553900347D68 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		8678CD071940553900347D68 /* FacebookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FacebookTests-Info.plist"; sourceTree = "<group>"; };
-		8678CD091940553900347D68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8678CD0B1940553A00347D68 /* FacebookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacebookTests.m; sourceTree = "<group>"; };
-		86A5BFC219405A4600DDF364 /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PostViewController.h; path = ../PostViewController.h; sourceTree = "<group>"; };
-		86A5BFC319405A4600DDF364 /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PostViewController.m; path = ../PostViewController.m; sourceTree = "<group>"; };
-		86A5BFC419405A4600DDF364 /* PostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PostViewController.xib; path = ../PostViewController.xib; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		8678CCE01940553900347D68 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8678CCE91940553900347D68 /* CoreGraphics.framework in Frameworks */,
-				8678CCEB1940553900347D68 /* UIKit.framework in Frameworks */,
-				8678CCE71940553900347D68 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8678CCFB1940553900347D68 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8678CD001940553900347D68 /* XCTest.framework in Frameworks */,
-				8678CD021940553900347D68 /* UIKit.framework in Frameworks */,
-				8678CD011940553900347D68 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		8678CCDA1940553900347D68 = {
-			isa = PBXGroup;
-			children = (
-				8678CCEC1940553900347D68 /* Facebook */,
-				8678CD051940553900347D68 /* FacebookTests */,
-				8678CCE51940553900347D68 /* Frameworks */,
-				8678CCE41940553900347D68 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		8678CCE41940553900347D68 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8678CCE31940553900347D68 /* Facebook.app */,
-				8678CCFE1940553900347D68 /* FacebookTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		8678CCE51940553900347D68 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8678CCE61940553900347D68 /* Foundation.framework */,
-				8678CCE81940553900347D68 /* CoreGraphics.framework */,
-				8678CCEA1940553900347D68 /* UIKit.framework */,
-				8678CCFF1940553900347D68 /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8678CCEC1940553900347D68 /* Facebook */ = {
-			isa = PBXGroup;
-			children = (
-				86A5BFC219405A4600DDF364 /* PostViewController.h */,
-				86A5BFC319405A4600DDF364 /* PostViewController.m */,
-				86A5BFC419405A4600DDF364 /* PostViewController.xib */,
-				8678CCF51940553900347D68 /* AppDelegate.h */,
-				8678CCF61940553900347D68 /* AppDelegate.m */,
-				8678CCED1940553900347D68 /* Supporting Files */,
-				86708AA31946DF3100D106FC /* Media.xcassets */,
-			);
-			path = Facebook;
-			sourceTree = "<group>";
-		};
-		8678CCED1940553900347D68 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8678CCEE1940553900347D68 /* Facebook-Info.plist */,
-				8678CCEF1940553900347D68 /* InfoPlist.strings */,
-				8678CCF21940553900347D68 /* main.m */,
-				8678CCF41940553900347D68 /* Facebook-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8678CD051940553900347D68 /* FacebookTests */ = {
-			isa = PBXGroup;
-			children = (
-				8678CD0B1940553A00347D68 /* FacebookTests.m */,
-				8678CD061940553900347D68 /* Supporting Files */,
-			);
-			path = FacebookTests;
-			sourceTree = "<group>";
-		};
-		8678CD061940553900347D68 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8678CD071940553900347D68 /* FacebookTests-Info.plist */,
-				8678CD081940553900347D68 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		8678CCE21940553900347D68 /* Facebook */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8678CD0F1940553A00347D68 /* Build configuration list for PBXNativeTarget "Facebook" */;
-			buildPhases = (
-				8678CCDF1940553900347D68 /* Sources */,
-				8678CCE01940553900347D68 /* Frameworks */,
-				8678CCE11940553900347D68 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Facebook;
-			productName = Facebook;
-			productReference = 8678CCE31940553900347D68 /* Facebook.app */;
-			productType = "com.apple.product-type.application";
-		};
-		8678CCFD1940553900347D68 /* FacebookTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8678CD121940553A00347D68 /* Build configuration list for PBXNativeTarget "FacebookTests" */;
-			buildPhases = (
-				8678CCFA1940553900347D68 /* Sources */,
-				8678CCFB1940553900347D68 /* Frameworks */,
-				8678CCFC1940553900347D68 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8678CD041940553900347D68 /* PBXTargetDependency */,
-			);
-			name = FacebookTests;
-			productName = FacebookTests;
-			productReference = 8678CCFE1940553900347D68 /* FacebookTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		8678CCDB1940553900347D68 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Jairo Avalos";
-				TargetAttributes = {
-					8678CCFD1940553900347D68 = {
-						TestTargetID = 8678CCE21940553900347D68;
-					};
-				};
-			};
-			buildConfigurationList = 8678CCDE1940553900347D68 /* Build configuration list for PBXProject "Facebook" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 8678CCDA1940553900347D68;
-			productRefGroup = 8678CCE41940553900347D68 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				8678CCE21940553900347D68 /* Facebook */,
-				8678CCFD1940553900347D68 /* FacebookTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		8678CCE11940553900347D68 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8678CCF11940553900347D68 /* InfoPlist.strings in Resources */,
-				86708AA41946DF3100D106FC /* Media.xcassets in Resources */,
-				86A5BFC619405A4600DDF364 /* PostViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8678CCFC1940553900347D68 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8678CD0A1940553900347D68 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		8678CCDF1940553900347D68 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8678CCF71940553900347D68 /* AppDelegate.m in Sources */,
-				8678CCF31940553900347D68 /* main.m in Sources */,
-				86A5BFC519405A4600DDF364 /* PostViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8678CCFA1940553900347D68 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8678CD0C1940553A00347D68 /* FacebookTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8678CD041940553900347D68 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8678CCE21940553900347D68 /* Facebook */;
-			targetProxy = 8678CD031940553900347D68 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		8678CCEF1940553900347D68 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8678CCF01940553900347D68 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		8678CD081940553900347D68 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8678CD091940553900347D68 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		8678CD0D1940553A00347D68 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		8678CD0E1940553A00347D68 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		8678CD101940553A00347D68 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Facebook/Facebook-Prefix.pch";
-				INFOPLIST_FILE = "Facebook/Facebook-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		8678CD111940553A00347D68 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Facebook/Facebook-Prefix.pch";
-				INFOPLIST_FILE = "Facebook/Facebook-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		8678CD131940553A00347D68 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Facebook.app/Facebook";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Facebook/Facebook-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "FacebookTests/FacebookTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		8678CD141940553A00347D68 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Facebook.app/Facebook";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Facebook/Facebook-Prefix.pch";
-				INFOPLIST_FILE = "FacebookTests/FacebookTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		8678CCDE1940553900347D68 /* Build configuration list for PBXProject "Facebook" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8678CD0D1940553A00347D68 /* Debug */,
-				8678CD0E1940553A00347D68 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8678CD0F1940553A00347D68 /* Build configuration list for PBXNativeTarget "Facebook" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8678CD101940553A00347D68 /* Debug */,
-				8678CD111940553A00347D68 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8678CD121940553A00347D68 /* Build configuration list for PBXNativeTarget "FacebookTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8678CD131940553A00347D68 /* Debug */,
-				8678CD141940553A00347D68 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 8678CCDB1940553900347D68 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>4192F93A447F4D1F8E63D60A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>86708AA31946DF3100D106FC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Media.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>86708AA41946DF3100D106FC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>86708AA31946DF3100D106FC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8678CCDA1940553900347D68</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8678CCEC1940553900347D68</string>
+				<string>8678CD051940553900347D68</string>
+				<string>8678CCE51940553900347D68</string>
+				<string>8678CCE41940553900347D68</string>
+				<string>D284B11CB27B43C5A07BD693</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8678CCDB1940553900347D68</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Jairo Avalos</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>8678CCFD1940553900347D68</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>8678CCE21940553900347D68</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>8678CCDE1940553900347D68</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>8678CCDA1940553900347D68</string>
+			<key>productRefGroup</key>
+			<string>8678CCE41940553900347D68</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>8678CCE21940553900347D68</string>
+				<string>8678CCFD1940553900347D68</string>
+			</array>
+		</dict>
+		<key>8678CCDE1940553900347D68</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>8678CD0D1940553A00347D68</string>
+				<string>8678CD0E1940553A00347D68</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>8678CCDF1940553900347D68</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8678CCF71940553900347D68</string>
+				<string>8678CCF31940553900347D68</string>
+				<string>86A5BFC519405A4600DDF364</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8678CCE01940553900347D68</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8678CCE91940553900347D68</string>
+				<string>8678CCEB1940553900347D68</string>
+				<string>8678CCE71940553900347D68</string>
+				<string>F2AE2E42CB584EABB6979DE4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8678CCE11940553900347D68</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8678CCF11940553900347D68</string>
+				<string>86708AA41946DF3100D106FC</string>
+				<string>86A5BFC619405A4600DDF364</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8678CCE21940553900347D68</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>8678CD0F1940553A00347D68</string>
+			<key>buildPhases</key>
+			<array>
+				<string>F1030F7DFF214CEBB45635A5</string>
+				<string>8678CCDF1940553900347D68</string>
+				<string>8678CCE01940553900347D68</string>
+				<string>8678CCE11940553900347D68</string>
+				<string>BD850FE9F4A542B39B826585</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Facebook</string>
+			<key>productName</key>
+			<string>Facebook</string>
+			<key>productReference</key>
+			<string>8678CCE31940553900347D68</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>8678CCE31940553900347D68</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Facebook.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>8678CCE41940553900347D68</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8678CCE31940553900347D68</string>
+				<string>8678CCFE1940553900347D68</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8678CCE51940553900347D68</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8678CCE61940553900347D68</string>
+				<string>8678CCE81940553900347D68</string>
+				<string>8678CCEA1940553900347D68</string>
+				<string>8678CCFF1940553900347D68</string>
+				<string>4192F93A447F4D1F8E63D60A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8678CCE61940553900347D68</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>8678CCE71940553900347D68</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8678CCE61940553900347D68</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8678CCE81940553900347D68</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>8678CCE91940553900347D68</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8678CCE81940553900347D68</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8678CCEA1940553900347D68</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>8678CCEB1940553900347D68</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8678CCEA1940553900347D68</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8678CCEC1940553900347D68</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>86A5BFC219405A4600DDF364</string>
+				<string>86A5BFC319405A4600DDF364</string>
+				<string>86A5BFC419405A4600DDF364</string>
+				<string>8678CCF51940553900347D68</string>
+				<string>8678CCF61940553900347D68</string>
+				<string>8678CCED1940553900347D68</string>
+				<string>86708AA31946DF3100D106FC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Facebook</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8678CCED1940553900347D68</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8678CCEE1940553900347D68</string>
+				<string>8678CCEF1940553900347D68</string>
+				<string>8678CCF21940553900347D68</string>
+				<string>8678CCF41940553900347D68</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8678CCEE1940553900347D68</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Facebook-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8678CCEF1940553900347D68</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8678CCF01940553900347D68</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8678CCF01940553900347D68</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8678CCF11940553900347D68</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8678CCEF1940553900347D68</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8678CCF21940553900347D68</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8678CCF31940553900347D68</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8678CCF21940553900347D68</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8678CCF41940553900347D68</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Facebook-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8678CCF51940553900347D68</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8678CCF61940553900347D68</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8678CCF71940553900347D68</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8678CCF61940553900347D68</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8678CCFA1940553900347D68</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8678CD0C1940553A00347D68</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8678CCFB1940553900347D68</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8678CD001940553900347D68</string>
+				<string>8678CD021940553900347D68</string>
+				<string>8678CD011940553900347D68</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8678CCFC1940553900347D68</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8678CD0A1940553900347D68</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8678CCFD1940553900347D68</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>8678CD121940553A00347D68</string>
+			<key>buildPhases</key>
+			<array>
+				<string>8678CCFA1940553900347D68</string>
+				<string>8678CCFB1940553900347D68</string>
+				<string>8678CCFC1940553900347D68</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>8678CD041940553900347D68</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>FacebookTests</string>
+			<key>productName</key>
+			<string>FacebookTests</string>
+			<key>productReference</key>
+			<string>8678CCFE1940553900347D68</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>8678CCFE1940553900347D68</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FacebookTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>8678CCFF1940553900347D68</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>8678CD001940553900347D68</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8678CCFF1940553900347D68</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8678CD011940553900347D68</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8678CCE61940553900347D68</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8678CD021940553900347D68</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8678CCEA1940553900347D68</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8678CD031940553900347D68</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>8678CCDB1940553900347D68</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>8678CCE21940553900347D68</string>
+			<key>remoteInfo</key>
+			<string>Facebook</string>
+		</dict>
+		<key>8678CD041940553900347D68</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>8678CCE21940553900347D68</string>
+			<key>targetProxy</key>
+			<string>8678CD031940553900347D68</string>
+		</dict>
+		<key>8678CD051940553900347D68</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8678CD0B1940553A00347D68</string>
+				<string>8678CD061940553900347D68</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FacebookTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8678CD061940553900347D68</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8678CD071940553900347D68</string>
+				<string>8678CD081940553900347D68</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8678CD071940553900347D68</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>FacebookTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8678CD081940553900347D68</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8678CD091940553900347D68</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8678CD091940553900347D68</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8678CD0A1940553900347D68</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8678CD081940553900347D68</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8678CD0B1940553A00347D68</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FacebookTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8678CD0C1940553A00347D68</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8678CD0B1940553A00347D68</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8678CD0D1940553A00347D68</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>8678CD0E1940553A00347D68</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>8678CD0F1940553A00347D68</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>8678CD101940553A00347D68</string>
+				<string>8678CD111940553A00347D68</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>8678CD101940553A00347D68</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>D284B11CB27B43C5A07BD693</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Facebook/Facebook-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Facebook/Facebook-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>8678CD111940553A00347D68</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>D284B11CB27B43C5A07BD693</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Facebook/Facebook-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Facebook/Facebook-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>8678CD121940553A00347D68</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>8678CD131940553A00347D68</string>
+				<string>8678CD141940553A00347D68</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>8678CD131940553A00347D68</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Facebook.app/Facebook</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Facebook/Facebook-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>FacebookTests/FacebookTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>8678CD141940553A00347D68</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Facebook.app/Facebook</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Facebook/Facebook-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FacebookTests/FacebookTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>86A5BFC219405A4600DDF364</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PostViewController.h</string>
+			<key>path</key>
+			<string>../PostViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>86A5BFC319405A4600DDF364</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PostViewController.m</string>
+			<key>path</key>
+			<string>../PostViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>86A5BFC419405A4600DDF364</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>PostViewController.xib</string>
+			<key>path</key>
+			<string>../PostViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>86A5BFC519405A4600DDF364</key>
+		<dict>
+			<key>fileRef</key>
+			<string>86A5BFC319405A4600DDF364</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>86A5BFC619405A4600DDF364</key>
+		<dict>
+			<key>fileRef</key>
+			<string>86A5BFC419405A4600DDF364</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BD850FE9F4A542B39B826585</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>D284B11CB27B43C5A07BD693</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F1030F7DFF214CEBB45635A5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>F2AE2E42CB584EABB6979DE4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4192F93A447F4D1F8E63D60A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>8678CCDB1940553900347D68</string>
+</dict>
+</plist>

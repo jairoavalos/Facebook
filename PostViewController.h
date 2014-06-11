@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TTTAttributedLabel.h"
 
 @interface PostViewController : UIViewController
 
