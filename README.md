@@ -26,3 +26,6 @@ Optional: Move the textfield when the keyboard appears
 Optional: Configure the autoresizingMasks to support rotation
 
 Optional: Implement the same page programatically without using Interface Builder
+
+
+![Alt text](https://raw.githubusercontent.com/jairoavalos/Facebook/master/Facebook-HW1.gif " ")
